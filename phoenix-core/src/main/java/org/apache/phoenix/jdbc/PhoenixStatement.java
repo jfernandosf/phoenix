@@ -1649,7 +1649,7 @@ public class PhoenixStatement implements Statement, SQLCloseable, org.apache.pho
      * internally enables the of use millisecond timeout granularity
      * and honors the exact value configured by phoenix.query.timeoutMs.
      */
-    public int getQueryTimeoutInMillis() throws SQLException {
+    public int getQueryTimeoutInMillis() {
         return queryTimeoutMillis;
     }
     
